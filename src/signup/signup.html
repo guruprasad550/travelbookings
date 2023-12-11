@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -157,5 +157,160 @@
       <div class="circle c1"></div>
       <div class="circle c2"></div>
     </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body
+    style="background-image: url(../img/img1.jpj.jpg); width: 100%; height: 1px"
+  >
+    <div class="container-fluid">
+      <p id="text"></p>
+      <form style="width: 25%; margin-left: 50%">
+
+        <div class="mb-3">
+          <label for="exampleInputFirstName" class="form-label" style="font-weight: 900"></label> FirstName</label>
+          <input type="text" class="form-control" id="InputFirstName" placeholder="Enter Your First Name" />
+        </div>
+        <br />
+
+        <div class="mb-3">
+          <label for="exampleInputLastName" class="form-label" style="font-weight: 900" >LastName</label>
+          <input type="text" class="form-control" id="inputlastname" placeholder="Enter Your Last Name" />
+        </div>
+        <br />
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label" style="font-weight: 900" >Email address</label >
+          <input type="email" class="form-control" id="inputemail" aria-describedby="emailHelp" placeholder="Plese Enter Your Email"/>
+          <div id="emailHelp" class="form-text">:plese dont share your mail anyone</div>
+        </div>
+        <br />
+
+        <div class="mb-3">
+          <label for="exampleInputPassword" class="form-label"style="font-weight: 900">Password</label>
+          <input type="password" class="form-control" id="inputpassword" placeholder="Minimum 6 Characters"/>
+        </div>
+        <br />
+
+        <div class="mb-3">
+          <label for="exampleInputConfirmPassword" class="form-label" style="font-weight: 900" >ConfirmPassword</label><br />
+          <input  type="password"  class="form-control"  id="inputconfirmpassword" placeholder="Plese Enter Confirm Password" /> </div>
+        <br />
+
+
+        <div class="mb-3">
+          <label for="exampleInputGender"  class="form-label" id="inputgender" style="font-weight: 900" >Gender</label><br />
+          <label> <input type="radio" name="gender" value="male" /> Male </label
+          ><br />
+
+          <label>
+            <input type="radio" name="gender" value="female" /> Female </label
+          ><br />
+
+          <label>
+            <input type="radio" name="gender" value="other" /> Other
+          </label>
+        </div>
+        <br />
+        <div class="mb-3">
+          <label
+            for="exampleInputDateOfBirth"
+            class="form-label"
+            style="font-weight: 900"
+            >DOB</label
+          >
+          <input
+            class="form-control"
+            type="date"
+            id="DOB"
+            placeholder="Enter Date-Of-Birth"
+          />
+        </div>
+        <br />
+        <div class="mb-3">
+          <label
+            for="exampleInputAdress"
+            class="form-label"
+            style="font-weight: 900"
+            >Adress</label
+          >
+          <input
+            class="form-control"
+            type="text"
+            id="inputadress"
+            placeholder="Enter Your Adress"
+          />
+        </div>
+        <br />
+        <div class="mb-3">
+          <label
+            for="ExampleInputState"
+            class="form-label"
+            style="font-weight: 900"
+            >Select State:</label
+          ><br />
+          <select id="state" name="state">
+            <option value=""></option>
+            <option value="AP">Andhrapradesh</option>
+            <option value="TL">Telengana</option>
+            <option value="MP">MadhyaPradesh</option>
+            <option value="Del">Delhi</option>
+            <option value="TN">TamilNadu</option>
+            <option value="GJ">Gujarat</option>
+            <option value="WB">WestBengal</option>
+          </select>
+        </div>
+        <br />
+        <div class="mb-3">
+          <label
+            for="ExampleInputDistrict"
+            class="form-label"
+            style="font-weight: 900"
+            >Select District:</label
+          ><br />
+          <select id="District" name="District">
+            <option value=""></option>
+            <option value="GNt">Guntur</option>
+            <option value="PK">Prakasam</option>
+            <option value="KR">Krishna</option>
+            <option value="GDVR">Godavari</option>
+            <option value="CTR">Chithoor</option>
+            <option value="KDP">Kadapa</option>
+            <option value="NLR">Nelore</option>
+            <option value="KNL">Kurnool</option>
+          </select>
+        </div>
+        <br />
+        <button type="submit" class="btn-primary">Sign-Up</button>
+      </form>
+      <button type="submit" class="btn-danger" id="sbt">Submit</button>
+
+      <table class="table table-bordered" cellpadding="" id="table" cellspacing>
+        <thead>
+          <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email address</th>
+            <th>Password</th>
+            <th>ConfirmPassword</th>
+            <th>Gender</th>
+            <th>DOB</th>
+            <th>Adress</th>
+            <th>State</th>
+            <th>District</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="./signup.js"></script>
   </body>
 </html>
